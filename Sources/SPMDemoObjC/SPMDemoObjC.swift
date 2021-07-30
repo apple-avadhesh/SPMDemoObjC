@@ -1,12 +1,12 @@
 import Foundation
 
-@objc public struct RicStruct {
-    @objc public private(set) var text = "Hello, World!"
+ public struct RicStruct {
+    public private(set) var text = "Hello, World!"
 
-    @objc public init() {
+    public init() {
     }
     
-    @objc public func sayHello() -> String {
+    public func sayHello() -> String {
         "Hello Ric!"
     }
 }
