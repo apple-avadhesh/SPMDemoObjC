@@ -16,7 +16,7 @@ public class RicClass: NSObject {
     @objc public let text = "Hello Everybody!"
     
     
-    public init(msg: String) {
+    @objc public init(msg: String) {
         if msg.isEmpty {
             self.msg = "Hello Ric!"
         }
