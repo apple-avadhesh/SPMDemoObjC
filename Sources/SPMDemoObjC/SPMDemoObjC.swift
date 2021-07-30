@@ -1,17 +1,17 @@
 import Foundation
 
-public struct RicStruct {
-    public private(set) var text = "Hello, World!"
+@objc public struct RicStruct {
+    @objc public private(set) var text = "Hello, World!"
 
-    public init() {
+    @objc public init() {
     }
     
-    public func sayHello() -> String {
+    @objc public func sayHello() -> String {
         "Hello Ric!"
     }
 }
 
-public class RicClass: NSObject {
+@objc public class RicClass: NSObject {
     @objc public var msg = "Mother has a feeling, I might be too appealing."
     @objc public let text = "Hello Everybody!"
     
@@ -22,11 +22,11 @@ public class RicClass: NSObject {
         }
     }
   
-    public func sayHello() {
+    @objc public func sayHello() {
             print(text)
         }
     
-    public func doSomething() {
+    @objc public func doSomething() {
         print("Inside doSomething()")
     }
 }
